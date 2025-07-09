@@ -32,4 +32,8 @@ Opcional: `LOCATION` (región del dataset). Si no se define, el script la autode
 ./restore.sh 20250709 routines             
 
 # Una tabla + rutinas
-./restore.sh 20250709 tabla1,routines      
+./restore.sh 20250709 tabla1,routines
+ ```
+#### Al finalizar publica un mensaje en PubSub
+{ "date":"YYYYMMDD", "dataset":"<DATASET>", "status":"SUCCESS|FAILURE|NO_DATA" }
+
